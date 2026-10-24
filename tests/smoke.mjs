@@ -22,5 +22,10 @@ assert.equal((await call('/api/validate','POST',{id:'instruments',answer:'saxoph
 const typo=await call('/api/validate','POST',{id:'mammals',answer:'elephent'});
 assert.equal(typo.valid,false);
 assert.equal(typo.correction,'elephant');
+assert.equal((await call('/api/validate','POST',{id:'countries',answer:'Monaco'})).valid,true);
+assert.equal((await call('/api/validate','POST',{id:'countries',answer:'Andorra'})).valid,true);
+assert.equal((await call('/api/validate','POST',{id:'countries',answer:'San Marino'})).valid,true);
+assert.equal((await call('/api/validate','POST',{id:'countries',answer:'Liechtenstein'})).valid,true);
+assert.equal((await call('/api/validate','POST',{id:'countries',answer:'Wakanda'})).valid,false);
 const html=readFileSync('index.html','utf8');assert.ok(html.includes('Ocean immersion v2'));assert.ok(html.includes('prefers-reduced-motion'));
 console.log('PASS: API health, seven unique prompts, exact answer, article alias, invalid prompt, unknown answer, ocean visuals and reduced motion');
