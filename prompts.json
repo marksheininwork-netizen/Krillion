@@ -1,0 +1,696 @@
+[
+  {
+    "id": "blue",
+    "title": "Things that are blue",
+    "hint": "Think of objects, animals, places and natural phenomena",
+    "answers": [
+      [
+        "sky",
+        5
+      ],
+      [
+        "ocean",
+        7
+      ],
+      [
+        "blueberry",
+        12
+      ],
+      [
+        "jeans",
+        16
+      ],
+      [
+        "sapphire",
+        36
+      ],
+      [
+        "blue jay",
+        41
+      ],
+      [
+        "lapis lazuli",
+        64
+      ],
+      [
+        "blue morpho butterfly",
+        77
+      ],
+      [
+        "blue glaucus",
+        94
+      ]
+    ]
+  },
+  {
+    "id": "weather",
+    "title": "Types of weather",
+    "hint": "From everyday forecasts to unusual atmospheric events",
+    "answers": [
+      [
+        "rain",
+        5
+      ],
+      [
+        "snow",
+        7
+      ],
+      [
+        "wind",
+        12
+      ],
+      [
+        "hail",
+        18
+      ],
+      [
+        "fog",
+        22
+      ],
+      [
+        "thunderstorm",
+        35
+      ],
+      [
+        "blizzard",
+        41
+      ],
+      [
+        "sleet",
+        46
+      ],
+      [
+        "derecho",
+        68
+      ],
+      [
+        "thundersnow",
+        81
+      ],
+      [
+        "graupel",
+        93
+      ]
+    ]
+  },
+  {
+    "id": "ocean",
+    "title": "Ocean animals",
+    "hint": "Look beyond the reef",
+    "answers": [
+      [
+        "shark",
+        5
+      ],
+      [
+        "whale",
+        8
+      ],
+      [
+        "dolphin",
+        12
+      ],
+      [
+        "octopus",
+        18
+      ],
+      [
+        "jellyfish",
+        20
+      ],
+      [
+        "seahorse",
+        35
+      ],
+      [
+        "manta ray",
+        42
+      ],
+      [
+        "anglerfish",
+        66
+      ],
+      [
+        "nautilus",
+        72
+      ],
+      [
+        "vampire squid",
+        82
+      ],
+      [
+        "barreleye fish",
+        95
+      ]
+    ]
+  },
+  {
+    "id": "space",
+    "title": "Things in the solar system",
+    "hint": "Not everything is a planet",
+    "answers": [
+      [
+        "sun",
+        5
+      ],
+      [
+        "earth",
+        6
+      ],
+      [
+        "moon",
+        9
+      ],
+      [
+        "mars",
+        12
+      ],
+      [
+        "saturn",
+        17
+      ],
+      [
+        "pluto",
+        34
+      ],
+      [
+        "europa",
+        43
+      ],
+      [
+        "titan",
+        48
+      ],
+      [
+        "ceres",
+        67
+      ],
+      [
+        "enceladus",
+        79
+      ],
+      [
+        "haumea",
+        92
+      ]
+    ]
+  },
+  {
+    "id": "fruit",
+    "title": "Types of fruit",
+    "hint": "Go beyond the fruit bowl",
+    "answers": [
+      [
+        "apple",
+        5
+      ],
+      [
+        "banana",
+        7
+      ],
+      [
+        "orange",
+        10
+      ],
+      [
+        "mango",
+        18
+      ],
+      [
+        "peach",
+        22
+      ],
+      [
+        "pomegranate",
+        36
+      ],
+      [
+        "papaya",
+        43
+      ],
+      [
+        "lychee",
+        48
+      ],
+      [
+        "rambutan",
+        65
+      ],
+      [
+        "salak",
+        79
+      ],
+      [
+        "jabuticaba",
+        95
+      ]
+    ]
+  },
+  {
+    "id": "mammals",
+    "title": "Mammals",
+    "hint": "Wild and domestic animals count",
+    "answers": [
+      [
+        "dog",
+        5
+      ],
+      [
+        "cat",
+        6
+      ],
+      [
+        "elephant",
+        12
+      ],
+      [
+        "lion",
+        15
+      ],
+      [
+        "horse",
+        18
+      ],
+      [
+        "kangaroo",
+        34
+      ],
+      [
+        "platypus",
+        45
+      ],
+      [
+        "capybara",
+        53
+      ],
+      [
+        "pangolin",
+        71
+      ],
+      [
+        "okapi",
+        80
+      ],
+      [
+        "solenodon",
+        96
+      ]
+    ]
+  },
+  {
+    "id": "countries",
+    "title": "Countries of the world",
+    "hint": "Think beyond the largest nations",
+    "answers": [
+      [
+        "canada",
+        5
+      ],
+      [
+        "united states",
+        6
+      ],
+      [
+        "france",
+        8
+      ],
+      [
+        "japan",
+        10
+      ],
+      [
+        "brazil",
+        16
+      ],
+      [
+        "iceland",
+        33
+      ],
+      [
+        "nepal",
+        40
+      ],
+      [
+        "fiji",
+        47
+      ],
+      [
+        "bhutan",
+        68
+      ],
+      [
+        "tuvalu",
+        78
+      ],
+      [
+        "kiribati",
+        93
+      ]
+    ]
+  },
+  {
+    "id": "instruments",
+    "title": "Musical instruments",
+    "hint": "From orchestras to unusual sounds",
+    "answers": [
+      [
+        "piano",
+        5
+      ],
+      [
+        "guitar",
+        6
+      ],
+      [
+        "violin",
+        10
+      ],
+      [
+        "drums",
+        13
+      ],
+      [
+        "trumpet",
+        17
+      ],
+      [
+        "clarinet",
+        35
+      ],
+      [
+        "oboe",
+        42
+      ],
+      [
+        "bassoon",
+        50
+      ],
+      [
+        "theremin",
+        70
+      ],
+      [
+        "nyckelharpa",
+        81
+      ],
+      [
+        "glass armonica",
+        96
+      ]
+    ]
+  },
+  {
+    "id": "birds",
+    "title": "Types of birds",
+    "hint": "Some fly; some swim",
+    "answers": [
+      [
+        "eagle",
+        6
+      ],
+      [
+        "sparrow",
+        9
+      ],
+      [
+        "penguin",
+        13
+      ],
+      [
+        "owl",
+        17
+      ],
+      [
+        "parrot",
+        21
+      ],
+      [
+        "flamingo",
+        34
+      ],
+      [
+        "toucan",
+        41
+      ],
+      [
+        "kingfisher",
+        51
+      ],
+      [
+        "cassowary",
+        70
+      ],
+      [
+        "hoatzin",
+        82
+      ],
+      [
+        "kakapo",
+        95
+      ]
+    ]
+  },
+  {
+    "id": "trees",
+    "title": "Types of trees",
+    "hint": "Explore forests worldwide",
+    "answers": [
+      [
+        "oak",
+        5
+      ],
+      [
+        "pine",
+        8
+      ],
+      [
+        "maple",
+        12
+      ],
+      [
+        "birch",
+        17
+      ],
+      [
+        "palm",
+        21
+      ],
+      [
+        "willow",
+        35
+      ],
+      [
+        "cedar",
+        41
+      ],
+      [
+        "baobab",
+        54
+      ],
+      [
+        "sequoia",
+        66
+      ],
+      [
+        "ginkgo",
+        78
+      ],
+      [
+        "wollemi pine",
+        95
+      ]
+    ]
+  },
+  {
+    "id": "sports",
+    "title": "Types of sports",
+    "hint": "Think beyond major leagues",
+    "answers": [
+      [
+        "soccer",
+        5
+      ],
+      [
+        "basketball",
+        8
+      ],
+      [
+        "tennis",
+        12
+      ],
+      [
+        "baseball",
+        16
+      ],
+      [
+        "swimming",
+        20
+      ],
+      [
+        "badminton",
+        34
+      ],
+      [
+        "fencing",
+        42
+      ],
+      [
+        "curling",
+        53
+      ],
+      [
+        "kabaddi",
+        71
+      ],
+      [
+        "sepak takraw",
+        82
+      ],
+      [
+        "underwater hockey",
+        95
+      ]
+    ]
+  },
+  {
+    "id": "colors",
+    "title": "Names of colors",
+    "hint": "Specific shades are welcome",
+    "answers": [
+      [
+        "red",
+        5
+      ],
+      [
+        "blue",
+        6
+      ],
+      [
+        "green",
+        8
+      ],
+      [
+        "yellow",
+        10
+      ],
+      [
+        "purple",
+        16
+      ],
+      [
+        "turquoise",
+        34
+      ],
+      [
+        "magenta",
+        42
+      ],
+      [
+        "chartreuse",
+        62
+      ],
+      [
+        "periwinkle",
+        75
+      ],
+      [
+        "glaucous",
+        94
+      ]
+    ]
+  },
+  {
+    "id": "vegetables",
+    "title": "Vegetables",
+    "hint": "Root, leaf and stem vegetables",
+    "answers": [
+      [
+        "carrot",
+        5
+      ],
+      [
+        "potato",
+        7
+      ],
+      [
+        "broccoli",
+        11
+      ],
+      [
+        "spinach",
+        15
+      ],
+      [
+        "onion",
+        19
+      ],
+      [
+        "asparagus",
+        33
+      ],
+      [
+        "artichoke",
+        44
+      ],
+      [
+        "kohlrabi",
+        63
+      ],
+      [
+        "salsify",
+        81
+      ],
+      [
+        "crosne",
+        96
+      ]
+    ]
+  },
+  {
+    "id": "landmarks",
+    "title": "Famous landmarks",
+    "hint": "Natural and built wonders",
+    "answers": [
+      [
+        "eiffel tower",
+        5
+      ],
+      [
+        "statue of liberty",
+        8
+      ],
+      [
+        "great wall of china",
+        11
+      ],
+      [
+        "colosseum",
+        16
+      ],
+      [
+        "taj mahal",
+        20
+      ],
+      [
+        "machu picchu",
+        35
+      ],
+      [
+        "petra",
+        44
+      ],
+      [
+        "angkor wat",
+        61
+      ],
+      [
+        "sigiriya",
+        79
+      ],
+      [
+        "nan madol",
+        96
+      ]
+    ]
+  }
+]
