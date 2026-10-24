@@ -15,5 +15,12 @@ assert.equal((await call('/api/validate','POST',{id:first.id,answer:canonical}))
 assert.equal((await call('/api/validate','POST',{id:first.id,answer:'the '+canonical})).valid,true);
 assert.equal((await call('/api/validate','POST',{id:'invalid',answer:'cat'})).valid,false);
 assert.equal((await call('/api/validate','POST',{id:first.id,answer:'zzzzzzzzzzzzzzzz'})).valid,false);
+assert.equal((await call('/api/validate','POST',{id:'mammals',answer:'human'})).valid,true);
+assert.equal((await call('/api/validate','POST',{id:'mammals',answer:'people'})).valid,true);
+assert.equal((await call('/api/validate','POST',{id:'mammals',answer:'platypus'})).valid,true);
+assert.equal((await call('/api/validate','POST',{id:'instruments',answer:'saxophone'})).valid,true);
+const typo=await call('/api/validate','POST',{id:'mammals',answer:'elephent'});
+assert.equal(typo.valid,false);
+assert.equal(typo.correction,'elephant');
 const html=readFileSync('index.html','utf8');assert.ok(html.includes('Ocean immersion v2'));assert.ok(html.includes('prefers-reduced-motion'));
 console.log('PASS: API health, seven unique prompts, exact answer, article alias, invalid prompt, unknown answer, ocean visuals and reduced motion');
