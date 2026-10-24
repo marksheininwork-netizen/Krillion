@@ -1,0 +1,11 @@
+import prompts from './prompts.json';
+const tiers=[{min:0,points:10,name:'Plankton'},{min:30,points:30,name:'Schooler'},{min:60,points:60,name:'Deep Cut'},{min:90,points:100,name:'One in a Krillion'}];
+const normalize=s=>String(s||'').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9 ]/g,'').replace(/\s+/g,' ').trim();
+const hash=s=>{let h=2166136261;for(let i=0;i<s.length;i++)h=Math.imul(h^s.charCodeAt(i),16777619);return h>>>0};
+const utcDay=()=>new Date().toISOString().slice(0,10);
+const sequence=(seed)=>{const list=[...prompts];let n=hash(seed);for(let i=list.length-1;i>0;i--){n=(Math.imul(n,1664525)+1013904223)>>>0;const j=n%(i+1);[list[i],list[j]]=[list[j],list[i]]}return list.slice(0,7)};
+const publicPrompt=p=>({id:p.id,title:p.title,hint:p.hint});
+function json(data,status=200){return new Response(JSON.stringify(data),{status,headers:{'content-type':'application/json; charset=utf-8','cache-control':'no-store'}})}
+export default {async fetch(request,env){const url=new URL(request.url);if(url.pathname==='/api/round'&&request.method==='GET'){const mode=url.searchParams.get('mode')==='unlimited'?'unlimited':'daily';const seed=mode==='daily'?'daily:'+utcDay():'unlimited:'+String(url.searchParams.get('seed')||'0').slice(0,50);return json({date:utcDay(),mode,prompts:sequence(seed).map(publicPrompt),seconds:20,maxPoints:700})}
+if(url.pathname==='/api/validate'&&request.method==='POST'){let data;try{data=await request.json()}catch{return json({error:'Invalid JSON'},400)}const id=String(data.id||''),answer=normalize(data.answer),p=prompts.find(x=>x.id===id);if(!p||!answer||answer.length>80)return json({valid:false,message:'Try a different answer.'});const found=p.answers.find(x=>normalize(x[0])===answer);if(!found)return json({valid:false,message:'Not recognized. Keep trying!'});const rarity=found[1],tier=[...tiers].reverse().find(x=>rarity>=x.min);return json({valid:true,answer:found[0],points:tier.points,meters:tier.points*10,tier:tier.name,rarity})}
+if(url.pathname.startsWith('/api/'))return json({error:'Not found'},404);return env.ASSETS.fetch(request)}}
