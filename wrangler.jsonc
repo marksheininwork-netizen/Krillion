@@ -1,0 +1,8 @@
+{
+  "name": "krillion",
+  "compatibility_date": "2026-10-23",
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS"
+  }
+}
