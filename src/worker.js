@@ -1,4 +1,4 @@
-import prompts from './prompts.json';
+import prompts from '../prompts.json';
 const tiers=[{min:0,points:10,name:'Plankton'},{min:30,points:30,name:'Schooler'},{min:60,points:60,name:'Deep Cut'},{min:90,points:100,name:'One in a Krillion'}];
 const normalize=s=>String(s||'').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9 ]/g,'').replace(/\s+/g,' ').trim();
 const hash=s=>{let h=2166136261;for(let i=0;i<s.length;i++)h=Math.imul(h^s.charCodeAt(i),16777619);return h>>>0};
