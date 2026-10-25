@@ -25,13 +25,10 @@ jobs:
             echo "ready=false" >> "$GITHUB_OUTPUT"
           fi
       - uses: actions/checkout@v4
-        if: steps.credentials.outputs.ready == 'true'
       - uses: actions/setup-node@v4
-        if: steps.credentials.outputs.ready == 'true'
         with:
           node-version: '22'
       - name: Validate configuration
-        if: steps.credentials.outputs.ready == 'true'
         run: npx --yes wrangler@4 deploy --dry-run
       - name: Deploy Cloudflare Worker
         if: steps.credentials.outputs.ready == 'true'
