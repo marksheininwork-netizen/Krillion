@@ -8,12 +8,6 @@
     "run_worker_first": [
       "/",
       "/api/*"
-    ],
-    "exclude": [
-      "/src/*",
-      "/prompts.json",
-      "/.github/*",
-      "/wrangler.jsonc"
     ]
   }
 }
