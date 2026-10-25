@@ -1,0 +1,8 @@
+src/
+tests/
+.github/
+wrangler.jsonc
+prompts.json
+README.md
+ADAPTIVE_ENGINE.md
+.assetsignore
