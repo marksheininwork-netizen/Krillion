@@ -1,0 +1,25 @@
+name: Content integrity
+on:
+  push:
+    paths:
+      - 'prompts.json'
+      - 'tests/content.test.mjs'
+      - '.github/workflows/content-integrity.yml'
+  pull_request:
+    paths:
+      - 'prompts.json'
+      - 'tests/content.test.mjs'
+      - '.github/workflows/content-integrity.yml'
+permissions:
+  contents: read
+jobs:
+  content-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate curated category content
+        run: node --test tests/content.test.mjs
